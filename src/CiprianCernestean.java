@@ -136,6 +136,7 @@ public class CiprianCernestean {
             }
         }
     }
+
     public static void Week2(){
         //1
         Scanner scan1 = new Scanner(System.in);
@@ -290,4 +291,8 @@ public class CiprianCernestean {
             System.out.println("Name: " + entry.getKey() + " ,Email: " + entry.getValue());
         }
     }
+
+    public static void Week4(){
+
+        }
 }
