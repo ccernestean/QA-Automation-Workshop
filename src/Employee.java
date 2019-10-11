@@ -1,58 +1,65 @@
 public class Employee {
     String name;
     int age;
-    int id;
+    int id = 0;
     String gender;
     String department;
     String jobtitle;
 
-    public void employeename(String name){
+    void employeename(String name) {
         this.name = name;
     }
-    public void employeeage(int employeeage){
-        age = employeeage;
+
+    void employeeage(int employeeage) {
+        this.age = employeeage;
     }
-    public void employeid(int employeeid){
-        id = employeeid;
+
+    void employeid(int employeeid) {
+        this.id = employeeid;
     }
-    public void employeegender(String gender){
+
+    void employeegender(String gender) {
         this.gender = gender;
     }
-    public void employeedepartment(String department){
+
+    void employeedepartment(String department) {
         this.department = department;
     }
-    public void employeejobtitle(String jobtitle){
+
+    void employeejobtitle(String jobtitle) {
         this.jobtitle = jobtitle;
     }
-    public String getname(){
-        return name;
-    }
-    public int getage(){
-        return age;
-    }
-    public int getid(){
-        return id;
-    }
-    public String getgender(){
-        return gender;
-    }
-    public String getdepartment(){
-        return department;
-    }
-    public String getjobtitle(){
-        return jobtitle;
+
+    public String getname() {
+        return this.name;
     }
 
-    public Employee(String name, String gender, String departmernt, String jobtitle, int age, int id){
+    public int getage() {
+        return this.age;
+    }
+
+    public int getid() {
+        return this.id;
+    }
+
+    public String getgender() {
+        return this.gender;
+    }
+
+    public String getdepartment() {
+        return this.department;
+    }
+
+    public String getjobtitle() {
+        return this.jobtitle;
+    }
+
+    void Employee(String name) {
         this.name = name;
-        this.age = age;
-        this.id = id++;
-        this.gender = gender;
-        this.department = departmernt;
-        this.jobtitle = jobtitle;
-    }
-
-    public void EmployeeDetails(){
-        System.out.println("Employee ID: " + this.id + " Name: " + this.name + " Age: " + this.age + " Gender: " + this.gender + " Department: " + this.department + " Job title: " + this.jobtitle);
+        this.age = this.age;
+        this.id = this.id++;
+        this.gender = this.gender;
+        this.department = this.department;
+        this.jobtitle = this.jobtitle;
     }
 }
